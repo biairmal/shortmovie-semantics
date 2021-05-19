@@ -7,19 +7,19 @@ require_once realpath(__DIR__ . '/..') . "../../../vendor/autoload.php";
 require_once realpath(__DIR__ . '/..') . "../html_tag_helpers.php";
 
 
-use Illuminate\Http\Request;
-
 class DataController extends Controller
 {
     function getMovies()
     {
-        \EasyRdf\RdfNamespace::set('data', 'http://localhost:3030/');
+        \EasyRdf\RdfNamespace::set('data', 'http://example.com/');
         \EasyRdf\RdfNamespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#/');
 
-        $sparql = new \EasyRdf\Sparql\Client('http://dbpedia.org/sparql');
+        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/dummy_dataset/query');
 
         $result = $sparql->query(
-            "SELECT ?id ?title ?platform ?genre ?publisher ?developer ?urlFoto
+            "PREFIX data:<http://example.com/>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+            SELECT ?id ?title ?platform ?genre ?publisher ?developer ?urlFoto
             WHERE{
                 ?sub rdf:type data:game
                 OPTIONAL {?sub data:id ?id.}
@@ -32,8 +32,36 @@ class DataController extends Controller
             }"
         );
 
-        echo $result;
+        return $result;
     }
+
+    function getMoviesById()
+    {
+        \EasyRdf\RdfNamespace::set('data', 'http://example.com/');
+        \EasyRdf\RdfNamespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#/');
+
+        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/dummy_dataset/query');
+
+        $result = $sparql->query(
+            "PREFIX data:<http://example.com/>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+            SELECT ?id ?title ?platform ?genre ?publisher ?developer ?urlFoto
+            WHERE{
+                ?sub rdf:type data:game
+                OPTIONAL {?sub data:id ?id.}
+                OPTIONAL {?sub data:title ?title.}
+                OPTIONAL {?sub data:platform ?platform.}
+                OPTIONAL {?sub data:genre ?genre.}
+                OPTIONAL {?sub data:publisher ?publisher.}
+                OPTIONAL {?sub data:developer ?developer.}
+                OPTIONAL {?sub data:urlFoto ?urlFoto.}
+            }"
+        );
+
+        return $result;
+    }
+
+
 }
 
 
