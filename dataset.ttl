@@ -1,0 +1,444 @@
+@prefix data: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+data:1 rdf:type dbo:Film;
+    data:id "2557001";
+    dc:title "Milk Teeth";
+    data:genre "Horror";
+    dbo:firstBroadcast "2020";
+    dbo:director "Felipe Vargas";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/aqc3jFT70BI";
+    data:urlFoto "";
+    .
+
+data:2 rdf:type dbo:Film;
+    data:id "2557002";
+    dc:title "Hungry Joe";
+    data:genre "Horror";
+    dbo:firstBroadcast "2021";
+    dbo:director "Paul Holbrook and Sam Dawe'";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/jj2NmOZ8i-s";
+    data:urlFoto "";
+    .
+
+data:3 rdf:type dbo:Film;
+    data:id "2557003";
+    dc:title "Stucco";
+    data:genre "Horror";
+    dbo:firstBroadcast "2020";
+    dbo:director "Janina Gavankar & Russo Schelling";
+    data:actor "Janina Gavankar";
+    data:youtubeLink "https://youtu.be/cExhFUuRUNE";
+    data:urlFoto "";
+    .
+
+data:4 rdf:type dbo:Film;
+    data:id "2557004";
+    dc:title "Suicide by Sunlight";
+    data:genre "Horror";
+    dbo:firstBroadcast "2020";
+    dbo:director "Nikyatu Jusu";
+    data:actor "Natalie Paul, Motell Foster";
+    data:youtubeLink "https://youtu.be/yRR-0IcKLd8";
+    data:urlFoto "";
+    .
+
+data:5 rdf:type dbo:Film;
+    data:id "2557005";
+    dc:title "MJ";
+    data:genre "Horror";
+    dbo:firstBroadcast "2020";
+    dbo:director "Jamie Delaney";
+    data:actor "Coral Amiga, Lily Nichol, Ruby Kammer";
+    data:youtubeLink "https://youtu.be/ktdDJ_jCxLo";
+    data:urlFoto "";
+    .
+
+data:6 rdf:type dbo:Film;
+    data:id "2557006";
+    dc:title "Corporate Monster";
+    data:genre "Horror";
+    dbo:firstBroadcast "2019";
+    dbo:director "Ruairi Robinson";
+    data:actor "Kett Turton, Jenna Coleman";
+    data:youtubeLink "https://youtu.be/3O9OO5TWY2c";
+    data:urlFoto "";
+    .
+
+data:7 rdf:type dbo:Film;
+    data:id "2557007";
+    dc:title "Welcome to Bushwick";
+    data:genre "Horror";
+    dbo:firstBroadcast "2018";
+    dbo:director "Henry Jinings";
+    data:actor "Tim Platt, Liba Vaynberg";
+    data:youtubeLink "https://youtu.be/J1uUAIG4-8c";
+    data:urlFoto "";
+    .
+
+data:8 rdf:type dbo:Film;
+    data:id "2557008";
+    dc:title "Dig Your Own Grave";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2020";
+    dbo:director "Larsen adroitly";
+    data:actor "Henry Zebrowski, Amos Vernon";
+    data:youtubeLink "https://youtu.be/GEKCY8VZSb0";
+    data:urlFoto "";
+    .
+
+data:9 rdf:type dbo:Film;
+    data:id "2557009";
+    dc:title "Do Plants Have Feelings?";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2020";
+    dbo:director "Jonny Look";
+    data:actor "Dr. Albert LINAS PHILLIPS, Letta KYLE MIZONO";
+    data:youtubeLink "https://youtu.be/hsjtzkmmvpA";
+    data:urlFoto "";
+    .
+
+data:10 rdf:type dbo:Film;
+    data:id "2557010";
+    dc:title "Double Tap";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2020";
+    dbo:director "Eros Vlahos";
+    data:actor "Olive Grey";
+    data:youtubeLink "https://youtu.be/ilkNS9GqsC0";
+    data:urlFoto "";
+    .
+
+data:11 rdf:type dbo:Film;
+    data:id "2557011";
+    dc:title "Luisa and Anna's First Fight";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2020";
+    dbo:director "Lena Tsodykovskaya";
+    data:actor "Kathleen Kenn, Natalie McElvy, Will Collins";
+    data:youtubeLink "https://youtu.be/VTW_yAAhhQM";
+    data:urlFoto "";
+    .
+
+data:12 rdf:type dbo:Film;
+    data:id "2557012";
+    dc:title "Lazy Susan";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2019";
+    dbo:director "Terri Timely";
+    data:actor "Monica Hong, Julia Morizawa, Cathy Chang";
+    data:youtubeLink "https://youtu.be/MzdmDdXBEVw";
+    data:urlFoto "";
+    .
+
+data:13 rdf:type dbo:Film;
+    data:id "2557013";
+    dc:title "The Big Break";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2019";
+    dbo:director "Gil Freston";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/g2dFk6ypsUY";
+    data:urlFoto "";
+    .
+
+data:14 rdf:type dbo:Film;
+    data:id "2557014";
+    dc:title "True Detective: The Oscars Parody";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2019";
+    dbo:director "";
+    data:actor "Brian C. Lehrer, Alec Rasmussen, Gil Freston";
+    data:youtubeLink "https://youtu.be/AKcUdDWIHOI";
+    data:urlFoto "";
+    .
+
+data:15 rdf:type dbo:Film;
+    data:id "2557015";
+    dc:title "Waffle";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2020";
+    dbo:director "Carlyn Hudson";
+    data:actor "Katie Marovitch, Kerry Barker, Raphael Chestang";
+    data:youtubeLink "https://youtu.be/FLOYmmFAsYI";
+    data:urlFoto "";
+    .
+
+data:16 rdf:type dbo:Film;
+    data:id "2557016";
+    dc:title "Crude Oil";
+    data:genre "Comedy";
+    dbo:firstBroadcast "2020";
+    dbo:director "Christopher Good";
+    data:actor "Andreina Byrne, Tipper Newton, Josh Fadem";
+    data:youtubeLink "https://youtu.be/ngp-42PMQ_w";
+    data:urlFoto "";
+    .
+
+data:17 rdf:type dbo:Film;
+    data:id "2557017";
+    dc:title "Icebound: The animated tale of Peter Freuchen";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Drew Christie";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/w9MxRGscW8M";
+    data:urlFoto "";
+    .
+
+data:18 rdf:type dbo:Film;
+    data:id "2557018";
+    dc:title "A Night in Camp Heebie Jeebie";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Dylan Chase";
+    data:actor "Hadley Granger, Britney Rose, Claire Gray";
+    data:youtubeLink "https://youtu.be/720dObL070g";
+    data:urlFoto "";
+    .
+
+data:19 rdf:type dbo:Film;
+    data:id "2557019";
+    dc:title "Raymonde or the Vertical Escape";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Sarah Van Den Boom";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/1VAYe3Eqst8";
+    data:urlFoto "";
+    .
+
+data:20 rdf:type dbo:Film;
+    data:id "2557020";
+    dc:title "Avarya";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Gökalp Gönen";
+    data:actor "Sermet Yeşil, Damla Çay";
+    data:youtubeLink "https://youtu.be/Lq1apxTurPU";
+    data:urlFoto "";
+    .
+
+data:21 rdf:type dbo:Film;
+    data:id "2557021";
+    dc:title "Tokri (The Basket)";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Suresh Eriyat";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/5qKYrajRNwo";
+    data:urlFoto "";
+    .
+
+data:22 rdf:type dbo:Film;
+    data:id "2557022";
+    dc:title "Intergalactic Chef Hunts for Rare Spices";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Jalil Sadool & Adam Meyer";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/iYF1DZ7bW2A";
+    data:urlFoto "";
+    .
+
+data:23 rdf:type dbo:Film;
+    data:id "2557023";
+    dc:title "Second to None";
+    data:genre "Animation";
+    dbo:firstBroadcast "2020";
+    dbo:director "Vincent Gallagher";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/paiVZ93ZroU";
+    data:urlFoto "";
+    .
+
+data:24 rdf:type dbo:Film;
+    data:id "2557024";
+    dc:title "She Paradise";
+    data:genre "Drama";
+    dbo:firstBroadcast "2019";
+    dbo:director "Maya Cozier";
+    data:actor "Onessa Nestor, Cheneka Clifford";
+    data:youtubeLink "https://youtu.be/gFd-uaVOfRQ";
+    data:urlFoto "";
+    .
+
+data:25 rdf:type dbo:Film;
+    data:id "2557025";
+    dc:title "Open House";
+    data:genre "Drama";
+    dbo:firstBroadcast "2019";
+    dbo:director "Philip Aceto";
+    data:actor " Michael Rose, Carey Van Driest, Roger Yawson";
+    data:youtubeLink "https://youtu.be/4ntLF0ZreoQ";
+    data:urlFoto "";
+    .
+
+data:26 rdf:type dbo:Film;
+    data:id "2557026";
+    dc:title "Nursery Rhymes";
+    data:genre "Drama";
+    dbo:firstBroadcast "2019";
+    dbo:director "Tom Noakes";
+    data:actor "Toby Wallace, Sara West";
+    data:youtubeLink "https://youtu.be/wLS_JmpL_70";
+    data:urlFoto "";
+    .
+
+data:27 rdf:type dbo:Film;
+    data:id "2557027";
+    dc:title "Holy Moses";
+    data:genre "Drama";
+    dbo:firstBroadcast "2019";
+    dbo:director "Eli Powers";
+    data:actor "Amanda Seyfried";
+    data:youtubeLink "https://youtu.be/h-1gbQ6c2N8";
+    data:urlFoto "";
+    .
+
+data:28 rdf:type dbo:Film;
+    data:id "2557028";
+    dc:title "Kate in Oxnard";
+    data:genre "Drama";
+    dbo:firstBroadcast "2019";
+    dbo:director "Emily Tomson";
+    data:actor "Audrey Corsa, Daniel Ahearn";
+    data:youtubeLink "https://youtu.be/n-_eU1UHi3o";
+    data:urlFoto "";
+    .
+
+data:29 rdf:type dbo:Film;
+    data:id "2557029";
+    dc:title "Formaldehyde";
+    data:genre "Drama";
+    dbo:firstBroadcast "2019";
+    dbo:director "David Swinburne";
+    data:actor "John Reynolds, Kathryn Prescott";
+    data:youtubeLink "https://youtu.be/xMyZjJwDpjs";
+    data:urlFoto "";
+    .
+
+data:30 rdf:type dbo:Film;
+    data:id "2557030";
+    dc:title "Uno";
+    data:genre "Drama";
+    dbo:firstBroadcast "2020";
+    dbo:director "Javier Marco";
+    data:actor "Pedro Casablanc, Manuel Toro";
+    data:youtubeLink "https://youtu.be/6r5thRFrBoQ";
+    data:urlFoto "";
+    .
+
+data:31 rdf:type dbo:Film;
+    data:id "2557031";
+    dc:title "Just A Drill";
+    data:genre "Drama";
+    dbo:firstBroadcast "2020";
+    dbo:director "Julianne Donelle";
+    data:actor "Sally Pressman, DJ Blickenstaff, and Jackson Pace";
+    data:youtubeLink "https://youtu.be/der7Gxyyuqo";
+    data:urlFoto "";
+    .
+
+data:32 rdf:type dbo:Film;
+    data:id "2557032";
+    dc:title "LOVE";
+    data:genre "Drama";
+    dbo:firstBroadcast "2020";
+    dbo:director "James Gallagher";
+    data:actor "Boris McGiver, Will Hochman, Elise Kibler";
+    data:youtubeLink "https://youtu.be/12WFRNd4UIg";
+    data:urlFoto "";
+    .
+
+data:33 rdf:type dbo:Film;
+    data:id "2557033";
+    dc:title "Where You Are";
+    data:genre "Drama";
+    dbo:firstBroadcast "2016";
+    dbo:director "Graham Parkes";
+    data:actor "Sarah Burns, Eric Edelstein";
+    data:youtubeLink "https://youtu.be/AUdt_Cg_9Xs";
+    data:urlFoto "";
+    .
+
+data:34 rdf:type dbo:Film;
+    data:id "2557034";
+    dc:title "Nerd Cave";
+    data:genre "Drama";
+    dbo:firstBroadcast "2018";
+    dbo:director "Mads Reuther";
+    data:actor "Marcus Gad Johansen & Michelle Bjørn-Andersen";
+    data:youtubeLink "https://youtu.be/jgsqNXUngMk";
+    data:urlFoto "";
+    .
+
+data:35 rdf:type dbo:Film;
+    data:id "2557035";
+    dc:title "Dirty Machines: The End of History";
+    data:genre "Sci-Fi";
+    dbo:firstBroadcast "2020";
+    dbo:director "David Matthew Olson";
+    data:actor "";
+    data:youtubeLink "https://youtu.be/DG4W1oWieoM";
+    data:urlFoto "";
+    .
+
+data:36 rdf:type dbo:Film;
+    data:id "2557036";
+    dc:title "AUTONOMOUS";
+    data:genre "Sci-Fi";
+    dbo:firstBroadcast "2020";
+    dbo:director "Joe Sill";
+    data:actor "Liz Morey, Keong Sim";
+    data:youtubeLink "https://youtu.be/Uf0Z8-lLfNg";
+    data:urlFoto "";
+    .
+
+data:37 rdf:type dbo:Film;
+    data:id "2557037";
+    dc:title "Dominant Species";
+    data:genre "Sci-Fi";
+    dbo:firstBroadcast "2020";
+    dbo:director "Joseph Sackett";
+    data:actor "Julian Cihi, Will Seefried, Marchánt Davis";
+    data:youtubeLink "https://youtu.be/ftEe116TD30";
+    data:urlFoto "";
+    .
+
+data:38 rdf:type dbo:Film;
+    data:id "2557038";
+    dc:title "Red Rover";
+    data:genre "Sci-Fi";
+    dbo:firstBroadcast "2021";
+    dbo:director "Brooke Goldfinch";
+    data:actor "Natalie Racoosin, Christopher Gray, Helen Cox";
+    data:youtubeLink "https://youtu.be/gCmmKUyeNBQ";
+    data:urlFoto "";
+    .
+
+data:39 rdf:type dbo:Film;
+    data:id "2557039";
+    dc:title "THE SHIFT";
+    data:genre "Sci-Fi";
+    dbo:firstBroadcast "2021";
+    dbo:director "Francesco Calabrese";
+    data:actor "Molly C. Quinn, Ryan Welsh & Whitney Hoyy";
+    data:youtubeLink "https://youtu.be/ATh1clz12_U";
+    data:urlFoto "";
+    .
+
+data:40 rdf:type dbo:Film;
+    data:id "2557040";
+    dc:title "Tunnelen (The Tunnel)";
+    data:genre "Sci-Fi";
+    dbo:firstBroadcast "2020";
+    dbo:director "André Øvredal";
+    data:actor "Siri Helen Müller, Kyrre Haugen Sydness, Max Amundsen";
+    data:youtubeLink "https://youtu.be/KOwKExagzdQ";
+    data:urlFoto "";
+    .

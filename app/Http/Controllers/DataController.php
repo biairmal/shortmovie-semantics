@@ -6,84 +6,114 @@ namespace App\Http\Controllers;
 require_once realpath(__DIR__ . '/..') . "../../../vendor/autoload.php";
 require_once realpath(__DIR__ . '/..') . "../html_tag_helpers.php";
 
+use Illuminate\http\Request;
+
+\EasyRdf\RdfNamespace::set('data', 'http://example.com/');
+\EasyRdf\RdfNamespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#/');
+\EasyRdf\RdfNamespace::set('dbo', 'http://dbpedia.org/ontology/');
+\EasyRdf\RdfNamespace::set('dc', 'http://purl.org/dc/elements/1.1/');
 
 class DataController extends Controller
 {
-    function getMovies()
-    {
-        \EasyRdf\RdfNamespace::set('data', 'http://example.com/');
-        \EasyRdf\RdfNamespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#/');
 
-        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/dummy_dataset/query');
+    // get all movies
+    function getAllMovies(Request $request)
+    {
+        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/short_movies/query');
 
         $result = $sparql->query(
             "PREFIX data:<http://example.com/>
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-            SELECT ?id ?title ?platform ?genre ?publisher ?developer ?urlFoto
-            WHERE{
-                ?sub rdf:type data:game
-                OPTIONAL {?sub data:id ?id.}
-                OPTIONAL {?sub data:title ?title.}
-                OPTIONAL {?sub data:platform ?platform.}
-                OPTIONAL {?sub data:genre ?genre.}
-                OPTIONAL {?sub data:publisher ?publisher.}
-                OPTIONAL {?sub data:developer ?developer.}
-                OPTIONAL {?sub data:urlFoto ?urlFoto.}
-            }"
+            PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+            PREFIX dbo:<http://dbpedia.org/ontology/>
+            PREFIX dc:<http://purl.org/dc/elements/1.1/>
+            PREFIX da: <https://www.wowman.org/index.php?id=1&type=get#>
+            PREFIX db: <http://dbpedia.org/>
+            PREFIX dbp: <http://dbpedia.org/property/>
+
+            SELECT ?id ?title ?genre ?firstBroadcast ?director ?actor ?youtubeLink ?urlFoto
+                WHERE{
+                    ?sub rdf:type dbo:Film
+                    OPTIONAL {?sub data:id ?id.}
+                    OPTIONAL {?sub dc:title ?title.}
+                    OPTIONAL {?sub data:genre ?genre.}
+                    OPTIONAL {?sub dbo:firstBroadcast ?firstBroadcast.}
+                    OPTIONAL {?sub dbo:director ?director.}
+                    OPTIONAL {?sub data:actor ?actor.}
+                    OPTIONAL {?sub data:youtubeLink ?youtubeLink.}
+                    OPTIONAL {?sub data:urlFoto ?urlFoto.}
+                }"
         );
 
         return $result;
     }
 
-    function getMoviesById()
+    // get one movie
+    function getMovie($id)
     {
-        \EasyRdf\RdfNamespace::set('data', 'http://example.com/');
-        \EasyRdf\RdfNamespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#/');
-
-        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/dummy_dataset/query');
+        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/short_movies/query');
 
         $result = $sparql->query(
             "PREFIX data:<http://example.com/>
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-            SELECT ?id ?title ?platform ?genre ?publisher ?developer ?urlFoto
-            WHERE{
-                ?sub rdf:type data:game
-                OPTIONAL {?sub data:id ?id.}
-                OPTIONAL {?sub data:title ?title.}
-                OPTIONAL {?sub data:platform ?platform.}
-                OPTIONAL {?sub data:genre ?genre.}
-                OPTIONAL {?sub data:publisher ?publisher.}
-                OPTIONAL {?sub data:developer ?developer.}
-                OPTIONAL {?sub data:urlFoto ?urlFoto.}
-            }"
+            PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+            PREFIX dbo:<http://dbpedia.org/ontology/>
+            PREFIX dc:<http://purl.org/dc/elements/1.1/>
+            PREFIX da: <https://www.wowman.org/index.php?id=1&type=get#>
+            PREFIX db: <http://dbpedia.org/>
+            PREFIX dbp: <http://dbpedia.org/property/>
+
+            SELECT ?id ?title ?genre ?firstBroadcast ?director ?actor ?youtubeLink ?urlFoto
+                WHERE{
+                    ?sub rdf:type dbo:Film
+                    OPTIONAL {?sub data:id ?id.}
+                    OPTIONAL {?sub dc:title ?title.}
+                    OPTIONAL {?sub data:genre ?genre.}
+                    OPTIONAL {?sub dbo:firstBroadcast ?firstBroadcast.}
+                    OPTIONAL {?sub dbo:director ?director.}
+                    OPTIONAL {?sub data:actor ?actor.}
+                    OPTIONAL {?sub data:youtubeLink ?youtubeLink.}
+                    OPTIONAL {?sub data:urlFoto ?urlFoto.}
+                    FILTER regex (?id, \"{$id}\", \"i\")
+                }"
         );
 
         return $result;
     }
 
+    // find movies by filter
+    function findMovies($title, $genre, $director)
+    {
+        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/short_movies/query');
 
+        $title = ($title) ? $title : '';
+        $genre = ($genre) ? $genre : '';
+        $director = ($director) ? $director : '';
+
+        $result = $sparql->query(
+            "PREFIX data:<http://example.com/>
+            PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+            PREFIX dbo:<http://dbpedia.org/ontology/>
+            PREFIX dc:<http://purl.org/dc/elements/1.1/>
+            PREFIX da: <https://www.wowman.org/index.php?id=1&type=get#>
+            PREFIX db: <http://dbpedia.org/>
+            PREFIX dbp: <http://dbpedia.org/property/>
+
+            SELECT ?id ?title ?genre ?firstBroadcast ?director ?actor ?youtubeLink ?urlFoto
+                WHERE{
+                    ?sub rdf:type dbo:Film
+                    OPTIONAL {?sub data:id ?id.}
+                    OPTIONAL {?sub dc:title ?title.}
+                    OPTIONAL {?sub data:genre ?genre.}
+                    OPTIONAL {?sub dbo:firstBroadcast ?firstBroadcast.}
+                    OPTIONAL {?sub dbo:director ?director.}
+                    OPTIONAL {?sub data:actor ?actor.}
+                    OPTIONAL {?sub data:youtubeLink ?youtubeLink.}
+                    OPTIONAL {?sub data:urlFoto ?urlFoto.}
+                    FILTER regex(?title, \"{$title}\", \"i\")
+                    FILTER regex(?genre, \"{$genre}\", \"i\")
+                    FILTER regex(?director, \"{$director}\", \"i\")
+                }"
+        );
+
+        return $result;
+    }
 }
-
-
-// Contoh
-
-// \EasyRdf\RdfNamespace::set('dbc', 'http://dbpedia.org/resource/Category:');
-        // \EasyRdf\RdfNamespace::set('dbpedia', 'http://dbpedia.org/resource/');
-        // \EasyRdf\RdfNamespace::set('dbo', 'http://dbpedia.org/ontology/');
-        // \EasyRdf\RdfNamespace::set('dbp', 'http://dbpedia.org/property/');
-        // \EasyRdf\RdfNamespace::set('foaf', 'http://xmlns.com/foaf/0.1/');
-        // \EasyRdf\RdfNamespace::set('', 'http://dbpedia.org/resource/');
-        // \EasyRdf\RdfNamespace::set('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
-
-
-        // $sparql = new \EasyRdf\Sparql\Client('http://dbpedia.org/sparql');
-
-        // $result = $sparql->query(
-        //     'SELECT * WHERE {
-        //         ?country rdf:type dbo:Country .
-        //         ?country rdfs:label ?label .
-        //         ?country dct:subject dbc:Member_states_of_the_United_Nations .
-        //         FILTER ( lang(?label) = "en" )
-        //       } ORDER BY ?label'
-        // );
-        // echo $result;
