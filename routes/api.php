@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/movies', [DataController::class, 'getAllMovies']);
-Route::get('/movies/{id}', [DataController::class, 'getMovie']);
+// Yang dulu pernah ada...
+Route::get('/', [DataController::class, 'getAllMovies']);
+Route::get('/search', [DataController::class, 'search']);
+Route::get('/movies/{genre}', [DataController::class, 'getByGenre']);
+// Route::get('/movies/{id}', [DataController::class, 'getMovie']);
 // Route::get('/movies/{title?}&{genre?}&{director?}', [DataController::class, 'findMovies']);
