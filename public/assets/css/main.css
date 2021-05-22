@@ -170,7 +170,7 @@ ul ul a {
 ----------------------------------------------------- */
 
 #content {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;

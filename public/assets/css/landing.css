@@ -1,0 +1,33 @@
+.jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-image.jpg");
+    /* Set a specific height */
+    /* height: 100%; */
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.lead{
+    margin-top: 190px;
+    margin-left: 132px;
+}
+
+.btn-primary{
+    background-color: #FE5F55;
+    border-color: #FE5F55;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn-primary:hover{
+    background-color: #c44b43;
+}
+
+.container-fluid > .row:nth-child(2) > div > h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #495867;
+}
