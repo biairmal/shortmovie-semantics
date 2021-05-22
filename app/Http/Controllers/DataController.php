@@ -9,8 +9,7 @@ use App\Models\Sparql;
 class DataController extends Controller
 {
 
-    // get all movies
-    function getMovies(Request $request)
+    function search(Request $request)
     {
         $sparql = new Sparql();
         $search = $request->search;
@@ -22,7 +21,24 @@ class DataController extends Controller
         $byDirector = $sparql->getMovies('director', $search);
         $byActor = $sparql->getMovies('actor', $search);
         
-        $result = compact("byId", "byGenre", "byTitle", "byYear", "byDirector", "byActor");
-        return $result;
+        return compact("byId", "byGenre", "byTitle", "byYear", "byDirector", "byActor");
+    }
+
+    function getAllMovies(){
+        $sparql = new Sparql();
+
+        return $sparql->getMovies('all');
+    }
+
+    function getMovie($id){
+        $sparql = new Sparql();
+
+        return $sparql->getMovies('id', $id);
+    }
+
+    function getByGenre($genre){
+        $sparql = new Sparql();
+
+        return $sparql->getMovies('genre', $genre);
     }
 }

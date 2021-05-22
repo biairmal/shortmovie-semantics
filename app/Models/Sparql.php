@@ -18,7 +18,7 @@ class Sparql extends Model
 {
     use HasFactory;
 
-    function getMovies($type, $search)
+    function getMovies($type = 'all', $search = '')
     {
         $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/short_movies/query');
 
@@ -27,7 +27,7 @@ class Sparql extends Model
         $title = '';
         $firstBroadcast = '';
         $director = '';
-        $actor ='';
+        $actor = '';
 
         if ($type == 'id') {
             $id = $search;
@@ -41,6 +41,8 @@ class Sparql extends Model
             $director = $search;
         } else if ($type == 'actor') {
             $actor = $search;
+        } else if ($type == 'all') {
+            $search = '';
         } else {
             return "Unknown type";
         }

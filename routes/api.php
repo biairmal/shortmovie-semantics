@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // Yang dulu pernah ada...
-// Route::get('/movies', [DataController::class, 'getAllMovies']);
+Route::get('/', [DataController::class, 'getAllMovies']);
+Route::get('/search', [DataController::class, 'search']);
+Route::get('/movies/{genre}', [DataController::class, 'getByGenre']);
 // Route::get('/movies/{id}', [DataController::class, 'getMovie']);
 // Route::get('/movies/{title?}&{genre?}&{director?}', [DataController::class, 'findMovies']);
