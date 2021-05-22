@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 use Illuminate\http\Request;
@@ -20,8 +19,10 @@ class DataController extends Controller
         $byYear = $sparql->getMovies('firstBroadcast', $search);
         $byDirector = $sparql->getMovies('director', $search);
         $byActor = $sparql->getMovies('actor', $search);
-        
-        return compact("byId", "byGenre", "byTitle", "byYear", "byDirector", "byActor");
+
+        dd($byId,$byGenre,$byTitle,$byYear,$byDirector,$byActor);
+
+        return view('searchresult',compact("byId", "byGenre", "byTitle", "byYear", "byDirector", "byActor"));
     }
 
     function getAllMovies(){

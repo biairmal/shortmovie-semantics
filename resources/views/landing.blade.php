@@ -28,78 +28,25 @@
         <br>
             <div class="carousel">
             <div id="slider-slick" class="slider">
+                @forelse($dataAll as $data)
                 <div class="col">
                     <div class="card">
                         <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
                         <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
+                            <p class="card-title">{{$data -> title}} ({{$data->firstBroadcast}})</p>
+                            <a class="btn btn-primary" href="/movies/{{$data->id}}" role="button">Watch Now</a>
                         </div>
                     </div>
                 </div>
+                @empty
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
                         <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
+                            <p class="card-title">Data Kosong</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-title">Joker (2020)</p>
-                            <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
         </div>

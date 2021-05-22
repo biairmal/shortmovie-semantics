@@ -11,61 +11,15 @@
 @section('content')
 <div class="container-fluid">
     <div class="card-columns">
+        @foreach($category as $genre)
         <div class="card">
             <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
             <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
+                <p class="card-title">{{$genre->title}} ({{$genre->firstBroadcast}})</p>
+                <a class="btn btn-primary" href="/movies/{{$genre->id}}" role="button">Watch Now</a>
             </div>
         </div>
-
-        <div class="card">
-            <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-            <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-            <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-            <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-            <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-            <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-            <div class="card-body text-center">
-                <p class="card-title">Joker (2020)</p>
-                <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection('content')

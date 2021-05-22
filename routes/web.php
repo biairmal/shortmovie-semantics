@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DataController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 
@@ -13,7 +14,8 @@ use App\Http\Controllers\MainController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/',[MainController::class,'index']);
-Route::get('/grid',[MainController::class,'grid']);
-Route::get('/player',[MainController::class,'player']);
+Route::post('/search',[DataController::class,'search']);
+
+Route::get('/category/{genre}',[MainController::class,'category']);
+Route::get('/movies/{id}',[MainController::class,'getSingleMovie']);

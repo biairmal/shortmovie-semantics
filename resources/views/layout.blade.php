@@ -42,8 +42,8 @@
                         <span>MENU</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="#homeSubmenu">
+                <li class="{{ Request::is('/') ? 'active' : '' }}">
+                    <a href="/">
                         <i class="fas fa-home"></i>
                         <span>Home</span>
                     </a>
@@ -62,23 +62,20 @@
                         <span>CATEGORY</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#"><span>Action</span></a>
+                <li class="{{ Request::is('category/Horror') ? 'active' : '' }}">
+                    <a href="/category/Horror"><span>Horror</span></a>
                 </li>
-                <li>
-                    <a href="#"><span>Drama</span></a>
+                <li class="{{ Request::is('category/Comedy') ? 'active' : '' }}">
+                    <a href="/category/Comedy"><span>Comedy</span></a>
                 </li>
-                <li>
-                    <a href="#"><span>Family</span></a>
+                <li class="{{ Request::is('category/Animation') ? 'active' : '' }}">
+                    <a href="/category/Animation"><span>Animation</span></a>
                 </li>
-                <li>
-                    <a href="#"><span>Romance</span></a>
+                <li class="{{ Request::is('category/Drama') ? 'active' : '' }}">
+                    <a href="/category/Drama"><span>Drama</span></a>
                 </li>
-                <li>
-                    <a href="#"><span>Inspiring</span></a>
-                </li>
-                <li>
-                    <a href="#"><span>Sad</span></a>
+                <li class="{{ Request::is('category/Sci-Fi') ? 'active' : '' }}">
+                    <a href="/category/Sci-Fi"><span>Sci-Fi</span></a>
                 </li>
 
                 <!-- General -->
@@ -100,8 +97,9 @@
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2 searchbar" type="search" placeholder="&#xF002; &nbsp; Search" aria-label="Search">
+                <form class="form-inline" method="POST" action="/search">
+                @csrf
+                    <input class="form-control mr-sm-2 searchbar" name="search" type="search" placeholder="&#xF002; &nbsp; Search" aria-label="Search">
                 </form>
             </nav>
             @if ($errors->any())
