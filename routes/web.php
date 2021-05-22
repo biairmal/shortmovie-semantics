@@ -15,3 +15,5 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/',[MainController::class,'index']);
+Route::get('/grid',[MainController::class,'grid']);
+Route::get('/player',[MainController::class,'player']);

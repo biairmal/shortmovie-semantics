@@ -31,3 +31,19 @@
     font-size: 1.5rem;
     color: #495867;
 }
+
+.container-fluid > .row > .col-12 > .desc{
+    color: #495867;
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 5;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+    }
+}

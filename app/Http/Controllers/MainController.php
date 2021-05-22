@@ -9,4 +9,12 @@ class MainController extends Controller
     public function index(){
         return view('landing');
     }
+
+    public function grid(){
+        return view('gridresult');
+    }
+
+    public function player(){
+        return view('player');
+    }
 }
