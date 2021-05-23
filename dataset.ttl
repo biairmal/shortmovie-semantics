@@ -11,7 +11,7 @@ data:1 rdf:type dbo:Film;
     dbo:director "Felipe Vargas";
     data:actor "";
     data:youtubeLink "https://youtu.be/aqc3jFT70BI";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BOWNiYTY3ZDQtNmZmMy00MTJkLTk3YjItM2IzZGQwZWVkZTQ3XkEyXkFqcGdeQXVyMTExMDA4ODk2._V1_UY1200_CR85,0,630,1200_AL_.jpg";
     .
 
 data:2 rdf:type dbo:Film;
@@ -22,7 +22,7 @@ data:2 rdf:type dbo:Film;
     dbo:director "Paul Holbrook and Sam Dawe'";
     data:actor "";
     data:youtubeLink "https://youtu.be/jj2NmOZ8i-s";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BY2ViMjRhMzYtYjU4My00NjMzLWE5NjUtMDcxYzljNmYyYWYzXkEyXkFqcGdeQXVyMTA4NDQ1MDA@._V1_UY1200_CR80,0,630,1200_AL_.jpg";
     .
 
 data:3 rdf:type dbo:Film;
@@ -33,7 +33,7 @@ data:3 rdf:type dbo:Film;
     dbo:director "Janina Gavankar & Russo Schelling";
     data:actor "Janina Gavankar";
     data:youtubeLink "https://youtu.be/cExhFUuRUNE";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BMTE2MWE3ZmQtZGYxNi00NDE2LWI2MjYtMGI1MjYxMDExNTA5XkEyXkFqcGdeQXVyMDUxNjM5Mw@@._V1_.jpg";
     .
 
 data:4 rdf:type dbo:Film;
@@ -44,7 +44,7 @@ data:4 rdf:type dbo:Film;
     dbo:director "Nikyatu Jusu";
     data:actor "Natalie Paul, Motell Foster";
     data:youtubeLink "https://youtu.be/yRR-0IcKLd8";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BMjE4NTE3ODgyOF5BMl5BanBnXkFtZTgwOTk1ODAyNzM@._V1_.jpg";
     .
 
 data:5 rdf:type dbo:Film;
@@ -55,7 +55,7 @@ data:5 rdf:type dbo:Film;
     dbo:director "Jamie Delaney";
     data:actor "Coral Amiga, Lily Nichol, Ruby Kammer";
     data:youtubeLink "https://youtu.be/ktdDJ_jCxLo";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BMGNkY2Y5YjMtZWQxNy00OGNjLWI0ZTctYmM3NDNiZmVmYWI1XkEyXkFqcGdeQXVyMjIwMDUwODk@._V1_UY268_CR98,0,182,268_AL_.jpg";
     .
 
 data:6 rdf:type dbo:Film;
@@ -66,7 +66,7 @@ data:6 rdf:type dbo:Film;
     dbo:director "Ruairi Robinson";
     data:actor "Kett Turton, Jenna Coleman";
     data:youtubeLink "https://youtu.be/3O9OO5TWY2c";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/3O9OO5TWY2c/maxresdefault.jpg";
     .
 
 data:7 rdf:type dbo:Film;
@@ -77,7 +77,7 @@ data:7 rdf:type dbo:Film;
     dbo:director "Henry Jinings";
     data:actor "Tim Platt, Liba Vaynberg";
     data:youtubeLink "https://youtu.be/J1uUAIG4-8c";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/J1uUAIG4-8c/maxresdefault.jpg";
     .
 
 data:8 rdf:type dbo:Film;
@@ -88,7 +88,7 @@ data:8 rdf:type dbo:Film;
     dbo:director "Larsen adroitly";
     data:actor "Henry Zebrowski, Amos Vernon";
     data:youtubeLink "https://youtu.be/GEKCY8VZSb0";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/GEKCY8VZSb0/maxresdefault.jpg";
     .
 
 data:9 rdf:type dbo:Film;
@@ -99,7 +99,7 @@ data:9 rdf:type dbo:Film;
     dbo:director "Jonny Look";
     data:actor "Dr. Albert LINAS PHILLIPS, Letta KYLE MIZONO";
     data:youtubeLink "https://youtu.be/hsjtzkmmvpA";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/hsjtzkmmvpA/maxresdefault.jpg";
     .
 
 data:10 rdf:type dbo:Film;
@@ -110,7 +110,7 @@ data:10 rdf:type dbo:Film;
     dbo:director "Eros Vlahos";
     data:actor "Olive Grey";
     data:youtubeLink "https://youtu.be/ilkNS9GqsC0";
-    data:urlFoto "";
+    data:urlFoto "https://static.shortoftheweek.com/wp-content/uploads/2020/03/Double-Tap-Eros-Vlahos-01.jpg";
     .
 
 data:11 rdf:type dbo:Film;
@@ -121,7 +121,7 @@ data:11 rdf:type dbo:Film;
     dbo:director "Lena Tsodykovskaya";
     data:actor "Kathleen Kenn, Natalie McElvy, Will Collins";
     data:youtubeLink "https://youtu.be/VTW_yAAhhQM";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BOThiNWEyMzktNjdjYS00YmVhLTliMDctNGU3YTJmMTYyZTg4XkEyXkFqcGdeQXVyMzUwNjA4NDc@._V1_.jpg";
     .
 
 data:12 rdf:type dbo:Film;
@@ -132,7 +132,7 @@ data:12 rdf:type dbo:Film;
     dbo:director "Terri Timely";
     data:actor "Monica Hong, Julia Morizawa, Cathy Chang";
     data:youtubeLink "https://youtu.be/MzdmDdXBEVw";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BMzQ0ZTJiOGMtODBjZS00OGY3LThmZDgtMGY0OWEwOTM3Y2EzXkEyXkFqcGdeQXVyMTQwNjk1NjU@._V1_UY1200_CR109,0,630,1200_AL_.jpg";
     .
 
 data:13 rdf:type dbo:Film;
@@ -143,7 +143,7 @@ data:13 rdf:type dbo:Film;
     dbo:director "Gil Freston";
     data:actor "";
     data:youtubeLink "https://youtu.be/g2dFk6ypsUY";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BM2M5MWM5ZDAtZDFkOC00MGQ5LTgxNGYtYzNhNGI3NTIxYTQwXkEyXkFqcGdeQXVyMTk1ODU1ODU@._V1_UX182_CR0,0,182,268_AL_.jpg";
     .
 
 data:14 rdf:type dbo:Film;
@@ -154,7 +154,7 @@ data:14 rdf:type dbo:Film;
     dbo:director "";
     data:actor "Brian C. Lehrer, Alec Rasmussen, Gil Freston";
     data:youtubeLink "https://youtu.be/AKcUdDWIHOI";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/AKcUdDWIHOI/maxresdefault.jpg";
     .
 
 data:15 rdf:type dbo:Film;
@@ -165,7 +165,7 @@ data:15 rdf:type dbo:Film;
     dbo:director "Carlyn Hudson";
     data:actor "Katie Marovitch, Kerry Barker, Raphael Chestang";
     data:youtubeLink "https://youtu.be/FLOYmmFAsYI";
-    data:urlFoto "";
+    data:urlFoto "https://www.dreadcentral.com/wp-content/uploads/waffle.jpg";
     .
 
 data:16 rdf:type dbo:Film;
@@ -176,7 +176,7 @@ data:16 rdf:type dbo:Film;
     dbo:director "Christopher Good";
     data:actor "Andreina Byrne, Tipper Newton, Josh Fadem";
     data:youtubeLink "https://youtu.be/ngp-42PMQ_w";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BMDZjZDFjN2EtOTRkMi00ZjU3LWI0OWUtMTJlOTVmN2E4M2E4XkEyXkFqcGdeQXVyMjM2NTY5NTU@._V1_UY1200_CR90,0,630,1200_AL_.jpg";
     .
 
 data:17 rdf:type dbo:Film;
@@ -187,7 +187,7 @@ data:17 rdf:type dbo:Film;
     dbo:director "Drew Christie";
     data:actor "";
     data:youtubeLink "https://youtu.be/w9MxRGscW8M";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/w9MxRGscW8M/maxresdefault.jpg";
     .
 
 data:18 rdf:type dbo:Film;
@@ -198,7 +198,7 @@ data:18 rdf:type dbo:Film;
     dbo:director "Dylan Chase";
     data:actor "Hadley Granger, Britney Rose, Claire Gray";
     data:youtubeLink "https://youtu.be/720dObL070g";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BNDYxM2U2ODktZjhkMS00NWUyLWJiODMtYzg1YzBlMzI5YmQ3XkEyXkFqcGdeQXVyNTMxNzc1Mzk@._V1_.jpg";
     .
 
 data:19 rdf:type dbo:Film;
@@ -209,7 +209,7 @@ data:19 rdf:type dbo:Film;
     dbo:director "Sarah Van Den Boom";
     data:actor "";
     data:youtubeLink "https://youtu.be/1VAYe3Eqst8";
-    data:urlFoto "";
+    data:urlFoto "https://media2.firstshowing.net/firstshowing/img11/RaymondePosterartshortfilmanimFull.jpg";
     .
 
 data:20 rdf:type dbo:Film;
@@ -220,7 +220,7 @@ data:20 rdf:type dbo:Film;
     dbo:director "Gökalp Gönen";
     data:actor "Sermet Yeşil, Damla Çay";
     data:youtubeLink "https://youtu.be/Lq1apxTurPU";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BOWExNDcwOTYtNzkwYi00OTI2LWIzMzItN2FlM2U5YTdhMzEzXkEyXkFqcGdeQXVyMjE1MjE4NDE@._V1_.jpg";
     .
 
 data:21 rdf:type dbo:Film;
@@ -231,7 +231,7 @@ data:21 rdf:type dbo:Film;
     dbo:director "Suresh Eriyat";
     data:actor "";
     data:youtubeLink "https://youtu.be/5qKYrajRNwo";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/5qKYrajRNwo/maxresdefault.jpg";
     .
 
 data:22 rdf:type dbo:Film;
@@ -242,7 +242,7 @@ data:22 rdf:type dbo:Film;
     dbo:director "Jalil Sadool & Adam Meyer";
     data:actor "";
     data:youtubeLink "https://youtu.be/iYF1DZ7bW2A";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/iYF1DZ7bW2A/maxresdefault.jpg";
     .
 
 data:23 rdf:type dbo:Film;
@@ -253,7 +253,7 @@ data:23 rdf:type dbo:Film;
     dbo:director "Vincent Gallagher";
     data:actor "";
     data:youtubeLink "https://youtu.be/paiVZ93ZroU";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/paiVZ93ZroU/maxresdefault.jpg";
     .
 
 data:24 rdf:type dbo:Film;
@@ -264,7 +264,7 @@ data:24 rdf:type dbo:Film;
     dbo:director "Maya Cozier";
     data:actor "Onessa Nestor, Cheneka Clifford";
     data:youtubeLink "https://youtu.be/gFd-uaVOfRQ";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/gFd-uaVOfRQ/maxresdefault.jpg";
     .
 
 data:25 rdf:type dbo:Film;
@@ -275,7 +275,7 @@ data:25 rdf:type dbo:Film;
     dbo:director "Philip Aceto";
     data:actor " Michael Rose, Carey Van Driest, Roger Yawson";
     data:youtubeLink "https://youtu.be/4ntLF0ZreoQ";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BMTgzMzQyMDYwNl5BMl5BanBnXkFtZTgwMjQzMjQyMTE@._V1_.jpg";
     .
 
 data:26 rdf:type dbo:Film;
@@ -286,7 +286,7 @@ data:26 rdf:type dbo:Film;
     dbo:director "Tom Noakes";
     data:actor "Toby Wallace, Sara West";
     data:youtubeLink "https://youtu.be/wLS_JmpL_70";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BYzdmOTlkY2MtZDk4Yi00YzZhLTg2ZDgtYWM4N2EyZTU4YjkwXkEyXkFqcGdeQXVyMTY0MDYxNTQ@._V1_.jpg";
     .
 
 data:27 rdf:type dbo:Film;
@@ -297,7 +297,7 @@ data:27 rdf:type dbo:Film;
     dbo:director "Eli Powers";
     data:actor "Amanda Seyfried";
     data:youtubeLink "https://youtu.be/h-1gbQ6c2N8";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/h-1gbQ6c2N8/maxresdefault.jpg";
     .
 
 data:28 rdf:type dbo:Film;
@@ -308,7 +308,7 @@ data:28 rdf:type dbo:Film;
     dbo:director "Emily Tomson";
     data:actor "Audrey Corsa, Daniel Ahearn";
     data:youtubeLink "https://youtu.be/n-_eU1UHi3o";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BZTU2ZTA0YTctMjhiNC00NDljLTg1MmQtZTMxNTBiNWJmZmU2XkEyXkFqcGdeQXVyNjU4MDAyNzU@._V1_.jpg";
     .
 
 data:29 rdf:type dbo:Film;
@@ -319,7 +319,7 @@ data:29 rdf:type dbo:Film;
     dbo:director "David Swinburne";
     data:actor "John Reynolds, Kathryn Prescott";
     data:youtubeLink "https://youtu.be/xMyZjJwDpjs";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/xMyZjJwDpjs/maxresdefault.jpg";
     .
 
 data:30 rdf:type dbo:Film;
@@ -330,7 +330,7 @@ data:30 rdf:type dbo:Film;
     dbo:director "Javier Marco";
     data:actor "Pedro Casablanc, Manuel Toro";
     data:youtubeLink "https://youtu.be/6r5thRFrBoQ";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/6r5thRFrBoQ/maxresdefault.jpg";
     .
 
 data:31 rdf:type dbo:Film;
@@ -341,7 +341,7 @@ data:31 rdf:type dbo:Film;
     dbo:director "Julianne Donelle";
     data:actor "Sally Pressman, DJ Blickenstaff, and Jackson Pace";
     data:youtubeLink "https://youtu.be/der7Gxyyuqo";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BOWIxNjViYWEtOGVkNC00YjE5LTg5ZWItZTA1OTkwZDUzNjk1XkEyXkFqcGdeQXVyMTk1MDU1MzM@._V1_UX182_CR0,0,182,268_AL_.jpg";
     .
 
 data:32 rdf:type dbo:Film;
@@ -352,7 +352,7 @@ data:32 rdf:type dbo:Film;
     dbo:director "James Gallagher";
     data:actor "Boris McGiver, Will Hochman, Elise Kibler";
     data:youtubeLink "https://youtu.be/12WFRNd4UIg";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/12WFRNd4UIg/maxresdefault.jpg";
     .
 
 data:33 rdf:type dbo:Film;
@@ -363,7 +363,7 @@ data:33 rdf:type dbo:Film;
     dbo:director "Graham Parkes";
     data:actor "Sarah Burns, Eric Edelstein";
     data:youtubeLink "https://youtu.be/AUdt_Cg_9Xs";
-    data:urlFoto "";
+    data:urlFoto "http://www.goodshortfilms.it/wp-content/uploads/2016/09/588182621_1280x720-940x504.jpg";
     .
 
 data:34 rdf:type dbo:Film;
@@ -374,7 +374,7 @@ data:34 rdf:type dbo:Film;
     dbo:director "Mads Reuther";
     data:actor "Marcus Gad Johansen & Michelle Bjørn-Andersen";
     data:youtubeLink "https://youtu.be/jgsqNXUngMk";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BZGEwYjVlMGEtMDk2Ny00ODYzLWI3ZDEtODAyODFkOWYzNWQ3XkEyXkFqcGdeQXVyMTk2OTE1OTQ@._V1_.jpg";
     .
 
 data:35 rdf:type dbo:Film;
@@ -385,7 +385,7 @@ data:35 rdf:type dbo:Film;
     dbo:director "David Matthew Olson";
     data:actor "";
     data:youtubeLink "https://youtu.be/DG4W1oWieoM";
-    data:urlFoto "";
+    data:urlFoto "https://m.media-amazon.com/images/M/MV5BNjhiOWE5MDItYWQ5MC00ODY1LWFlNTktNTFjNjRkYjhhOTViXkEyXkFqcGdeQXVyMTE0MDIzODQx._V1_.jpg";
     .
 
 data:36 rdf:type dbo:Film;
@@ -396,7 +396,7 @@ data:36 rdf:type dbo:Film;
     dbo:director "Joe Sill";
     data:actor "Liz Morey, Keong Sim";
     data:youtubeLink "https://youtu.be/Uf0Z8-lLfNg";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/Uf0Z8-lLfNg/maxresdefault.jpg";
     .
 
 data:37 rdf:type dbo:Film;
@@ -407,7 +407,7 @@ data:37 rdf:type dbo:Film;
     dbo:director "Joseph Sackett";
     data:actor "Julian Cihi, Will Seefried, Marchánt Davis";
     data:youtubeLink "https://youtu.be/ftEe116TD30";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/ftEe116TD30/maxresdefault.jpg";
     .
 
 data:38 rdf:type dbo:Film;
@@ -418,7 +418,7 @@ data:38 rdf:type dbo:Film;
     dbo:director "Brooke Goldfinch";
     data:actor "Natalie Racoosin, Christopher Gray, Helen Cox";
     data:youtubeLink "https://youtu.be/gCmmKUyeNBQ";
-    data:urlFoto "";
+    data:urlFoto "https://media2.firstshowing.net/firstshowing/img12/RedroverPosterplatemainimagebig599.jpg";
     .
 
 data:39 rdf:type dbo:Film;
@@ -429,7 +429,7 @@ data:39 rdf:type dbo:Film;
     dbo:director "Francesco Calabrese";
     data:actor "Molly C. Quinn, Ryan Welsh & Whitney Hoyy";
     data:youtubeLink "https://youtu.be/ATh1clz12_U";
-    data:urlFoto "";
+    data:urlFoto "https://i.ytimg.com/vi/hcqmIcxPA8c/maxresdefault.jpg";
     .
 
 data:40 rdf:type dbo:Film;
@@ -440,5 +440,5 @@ data:40 rdf:type dbo:Film;
     dbo:director "André Øvredal";
     data:actor "Siri Helen Müller, Kyrre Haugen Sydness, Max Amundsen";
     data:youtubeLink "https://youtu.be/KOwKExagzdQ";
-    data:urlFoto "";
+    data:urlFoto "https://upload.wikimedia.org/wikipedia/en/e/e9/Tunnelen.jpg";
     .
