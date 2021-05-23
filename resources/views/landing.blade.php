@@ -31,7 +31,7 @@
                 @forelse($dataAll as $data)
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ $data->urlFoto }}" alt="Card image cap">
                         <div class="card-body text-center">
                             <p class="card-title">{{$data -> title}} ({{$data->firstBroadcast}})</p>
                             <a class="btn btn-primary" href="/movies/{{$data->id}}" role="button">Watch Now</a>

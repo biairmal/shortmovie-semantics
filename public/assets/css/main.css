@@ -38,6 +38,23 @@ span {
     display: inline-block;
 }
 
+.btn-primary{
+    background-color: #FE5F55;
+    border-color: #FE5F55;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 20px;
+    width: 121px;
+}
+
+.btn-primary:hover{
+    background-color: #c44b43;
+}
+
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */

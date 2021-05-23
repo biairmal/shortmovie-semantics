@@ -18,7 +18,14 @@ class MainController extends Controller
         $data = new DataController();
 
         $category = $data->getByGenre($genre);
-        return view('gridresult',compact('category'));
+        return view('gridresult',compact('category','genre'));
+    }
+
+    public function search(Request $request){
+        $data = new DataController();
+
+        $search = $data->search($request->search);
+        return view('searchresult',compact('search'));
     }
 
     public function getSingleMovie($id){

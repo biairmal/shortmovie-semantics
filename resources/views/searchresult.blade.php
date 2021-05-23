@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('custom_css')
-    <link rel="stylesheet" href="{{ asset('assets/css/landing.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gridrsult.css') }}">
 @endsection('custom_css')
 
 @section('custom_title')
@@ -10,91 +10,34 @@
 
 @section('content')
 <div class="container-fluid">
+    @php($i=0)
+    @php($countNull=0)
+
+    @foreach($search as $searchresult)
     <div class="row">
-        <h3>Genre</h3>
-        <div class="card-column">
-            @forelse($byGenre as $Genre)
+        @if($searchresult->numRows() > 0 )
+        <h3>Search by {{array_keys($search)[$i]}}</h3>
+        <div class="card-columns mb-5">
+            @foreach($searchresult as $data)
             <div class="card">
-                <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
+                <img class="card-img-top" src="{{ $data->urlFoto }}" alt="Card image cap">
                 <div class="card-body text-center">
-                    <p class="card-title">{{$Genre -> title}} ({{$Genre -> firstBroadcast}})</p>
-                    <a class="btn btn-primary" href="#" role="button">Watch Now</a>
+                    <p class="card-title">{{$data->title}} ({{$data->firstBroadcast}})</p>
+                    <a class="btn btn-primary" href="/movies/{{$data->id}}" role="button">Watch Now</a>
                 </div>
             </div>
-            @empty
-            <h3>Tidak ada</h3>
-            @endforelse
+            @endforeach
         </div>
+        @else
+        @php($countNull++)
+        @endif
     </div>
+    @php($i++)
+    @endforeach
 
-    <div class="row">
-        <h3>Year</h3>
-        <div class="card-column">
-            @forelse($byYear as $Year)
-            <div class="card">
-                <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-title">{{$Year -> title}} ({{$Year -> firstBroadcast}})</p>
-                    <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                </div>
-            </div>
-            @empty
-            <h3>Tidak ada</h3>
-            @endforelse
-        </div>
-    </div>
-
-    <div class="row">
-        <h3>Title</h3>
-        <div class="card-column">
-            @forelse($byTitle as $Title)
-            <div class="card">
-                <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-title">{{$Title -> title}} ({{$Title -> firstBroadcast}})</p>
-                    <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                </div>
-            </div>
-            @empty
-            <h3>Tidak ada</h3>
-            @endforelse
-        </div>
-    </div>
-
-    <div class="row">
-        <h3>Director</h3>
-        <div class="card-column">
-            @forelse($byDirector as $Director)
-            <div class="card">
-                <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-title">{{$Director -> title}} ({{$Director -> firstBroadcast}})</p>
-                    <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                </div>
-            </div>
-            @empty
-            <h3>Tidak ada</h3>
-            @endforelse
-        </div>
-    </div>
-
-    <div class="row">
-        <h3>Actor</h3>
-        <div class="card-column">
-            @forelse($byActor as $Actor)
-            <div class="card">
-                <img class="card-img-top" src="{{ asset('assets/img/poster.jpg') }}" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-title">{{$Actor -> title}} ({{$Actor -> firstBroadcast}})</p>
-                    <a class="btn btn-primary" href="#" role="button">Watch Now</a>
-                </div>
-            </div>
-            @empty
-            <h3>Tidak ada</h3>
-            @endforelse
-        </div>
-    </div>
-
+    @if($countNull >= 5)
+        <h3>Film Tidak Ditemukan</h3>
+    @endif
     
 </div>
 @endsection('content')

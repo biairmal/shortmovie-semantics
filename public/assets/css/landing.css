@@ -15,17 +15,9 @@
     margin-left: 132px;
 }
 
-.btn-primary{
-    background-color: #FE5F55;
-    border-color: #FE5F55;
-    font-weight: bold;
-    border-radius: 10px;
+.jumbotron > .lead > .btn {
+    width: 155px;
 }
-
-.btn-primary:hover{
-    background-color: #c44b43;
-}
-
 .container-fluid > .row:nth-child(2) > div > h3{
     font-weight: bold;
     font-size: 1.5rem;
@@ -36,14 +28,14 @@
     color: #495867;
 }
 
-@media (min-width: 992px) {
-    .card-columns {
-        column-count: 5;
-    }
+.card{
+    min-height: 480px;
+    border-radius: 10px;
 }
 
-@media (min-width: 1200px) {
-    .card-columns {
-        column-count: 5;
-    }
+.card-img-top{
+    height: 300px;
+    width: 175px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
 }
