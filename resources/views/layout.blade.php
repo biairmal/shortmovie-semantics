@@ -59,7 +59,7 @@
                 <li class="section-part mt-3">
                     <a href="#" id="sidebarCollapse">
                         <i class="fas fa-th-large"></i>
-                        <span>CATEGORY</span>
+                        <span>GENRE</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('category/Horror') ? 'active' : '' }}">

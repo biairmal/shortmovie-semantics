@@ -24,8 +24,9 @@ class MainController extends Controller
     public function search(Request $request){
         $data = new DataController();
 
-        $search = $data->search($request->search);
-        return view('searchresult',compact('search'));
+        $varsearch = $request->search;
+        $search = $data->search($varsearch);
+        return view('searchresult',compact('search','varsearch'));
     }
 
     public function getSingleMovie($id){

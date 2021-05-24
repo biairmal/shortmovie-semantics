@@ -7,6 +7,15 @@ $(document).ready(function () {
         slidesToScroll: 4,
         responsive: [
             {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,

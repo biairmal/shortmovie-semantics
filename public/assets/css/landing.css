@@ -39,3 +39,31 @@
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
+
+.card-title{
+    width: auto;
+    height: 71px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media  screen and (max-width: 1366px) {
+    .card{
+        min-height: 300px;
+    }
+    .card-img-top{
+        height: 200px;
+        width: 114px;
+    }
+    .card-body{
+        font-size: 12px;
+    }
+    .card-title{
+        height: 36px;
+    }
+    .btn{
+        font-size: 10px;
+        width: fit-content;
+        bottom: 8px;
+    }
+}

@@ -16,7 +16,7 @@
     @foreach($search as $searchresult)
     <div class="row">
         @if($searchresult->numRows() > 0 )
-        <h3>Search by {{array_keys($search)[$i]}}</h3>
+        <h3>Search "{{$varsearch}}" by {{array_keys($search)[$i]}}</h3>
         <div class="card-columns mb-5">
             @foreach($searchresult as $data)
             <div class="card">
