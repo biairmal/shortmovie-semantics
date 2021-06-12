@@ -26,7 +26,6 @@
         <div class="col">
         <h3>All Movies</h3>
         <br>
-            <div class="carousel">
             <div id="slider-slick" class="slider">
                 @forelse($dataAll as $data)
                 <div class="col">
@@ -48,7 +47,6 @@
                 </div>
                 @endforelse
             </div>
-        </div>
         </div>
     </div>
 

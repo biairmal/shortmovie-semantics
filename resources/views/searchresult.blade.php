@@ -29,7 +29,7 @@
             @endforeach
         </div>
         @else
-        @php($countNull++)
+            @php($countNull++)
         @endif
     </div>
     @php($i++)

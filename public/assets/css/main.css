@@ -207,7 +207,43 @@ ul ul a {
     height: 3rem;
     padding-left: 1rem;
 }
+.text-style{
+    color: #577399;
+    font-weight: bold;
+}
+#modalSearch > .modal-dialog > .modal-content{
+    border-radius: 20px;
+    background-color: #F7F7FF;
+    padding: 1rem;
+    color: #577399;
+}
 
+#modalSearch > .modal-dialog > .modal-content > .modal-header > .modal-title{
+    font-weight: bold;
+}
+
+.form-control{
+    background-color: rgba(189, 213, 234, 0.36);
+    border: none;
+    border-radius: 0.5rem;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-search{
+    border-radius: 0.5rem;
+    background-color: #577399;
+    color: #F7F7FF;
+    font-weight: bold;
+    padding: 10px;
+    font-size: inherit !important;
+}
+
+.btn-search:hover{
+    color: #F7F7FF;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

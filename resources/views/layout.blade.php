@@ -99,9 +99,52 @@
             <nav class="navbar navbar-expand-lg">
                 <form class="form-inline" method="POST" action="/search">
                 @csrf
-                    <input class="form-control mr-sm-2 searchbar" name="search" type="search" placeholder="&#xF002; &nbsp; Search" aria-label="Search">
+                    <input class="form-control mr-sm-2 searchbar" name="search" type="search" placeholder="&#xF002; &nbsp; What Are You Watching Today?" aria-label="Search">
                 </form>
+                <a href="#" title="Advanced Search" data-toggle="modal" data-target="#modalSearch"><i class="fas fa-list-ul text-style"></i></a>
             </nav>
+
+            <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Advanced Search</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST" action="/searchAdvanced">
+                            @csrf
+                            <div class="form-group">
+                                <label for="title" class="col-form-label">Title</label>
+                                <input type="text" class="form-control" id="title" name="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="genre" class="col-form-label">Genre</label>
+                                <input type="text" class="form-control" id="genre" name="genre">
+                            </div>
+                            <div class="form-group">
+                                <label for="year" class="col-form-label">Year</label>
+                                <input type="number" class="form-control" id="firstBroadcast" name="firstBroadcast">
+                            </div>
+                            <div class="form-group">
+                                <label for="director" class="col-form-label">Director</label>
+                                <input type="text" class="form-control" id="director" name="director">
+                            </div>
+                            <div class="form-group">
+                                <label for="actor" class="col-form-label">Actor</label>
+                                <input type="text" class="form-control" id="actor" name="actor">
+                            </div>
+                            <div class="btn-container">
+                                <button type="submit" class="btn btn-search">Search</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>

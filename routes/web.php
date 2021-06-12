@@ -16,6 +16,7 @@ use App\Http\Controllers\MainController;
 */
 Route::get('/',[MainController::class,'index']);
 Route::post('/search',[MainController::class,'search']);
+Route::post('/searchAdvanced',[MainController::class,'advancedSearch']);
 
 Route::get('/category/{genre}',[MainController::class,'category']);
 Route::get('/movies/{id}',[MainController::class,'getSingleMovie']);

@@ -47,6 +47,11 @@
     text-overflow: ellipsis;
 }
 
+.text-style{
+    color: #495867;
+    font-weight: bold;
+}
+
 @media  screen and (max-width: 1366px) {
     .card{
         min-height: 300px;
