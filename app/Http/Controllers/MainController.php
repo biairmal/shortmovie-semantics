@@ -7,34 +7,47 @@ use App\Http\Controllers\DataController;
 
 class MainController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $data = new DataController();
 
         $dataAll = $data->getAllMovies();
-        return view('landing',compact('dataAll'));
+        return view('landing', compact('dataAll'));
     }
 
-    public function category($genre){
+    public function category($genre)
+    {
         $data = new DataController();
 
         $category = $data->getByGenre($genre);
-        return view('gridresult',compact('category','genre'));
+        return view('gridresult', compact('category', 'genre'));
     }
 
-    public function search(Request $request){
+    public function search(Request $request)
+    {
         $data = new DataController();
 
         $varsearch = $request->search;
-        $search = $data->search($varsearch);
-        return view('searchresult',compact('search','varsearch'));
+        $array = explode(" ", $varsearch);
+        if (count($array) == 1) {
+            $search = $data->search($varsearch);
+            return view('searchresult', compact('search', 'varsearch'));
+        } else if (count($array) > 1) {
+            $search = array();
+            foreach ($array as $arr) {
+                array_push($search, $data->search($arr));
+            }
+        }
     }
 
-    public function getSingleMovie($id){
+    public function getSingleMovie($id)
+    {
         $data = new DataController();
 
         $movie = $data->getMovie($id);
-        $new_link = 'https://youtube.com/embed'.parse_url($movie[0]->youtubeLink, PHP_URL_PATH);
+        $new_link = 'https://youtube.com/embed' . parse_url($movie[0]->youtubeLink, PHP_URL_PATH);
+        $sameGenre = $data->getByGenre($movie[0]->genre);
 
-        return view('player',compact('movie','new_link'));
+        return view('player', compact('movie', 'new_link'));
     }
 }

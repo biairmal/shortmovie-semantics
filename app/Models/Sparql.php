@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use stdClass;
 
 require_once realpath(__DIR__ . '/..') . "../../vendor/autoload.php";
 require_once realpath(__DIR__ . '/..') . "../Http/html_tag_helpers.php";
@@ -18,10 +19,10 @@ class Sparql extends Model
 {
     use HasFactory;
 
-    function getMovies($type = 'all', $search = '')
+    function getMovies($type = 'all', $search = null)
     {
         $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/short_movies/query');
-
+        
         $id = '';
         $genre = '';
         $title = '';
@@ -43,6 +44,12 @@ class Sparql extends Model
             $actor = $search;
         } else if ($type == 'all') {
             $search = '';
+        } else if($type = 'advanced') {
+            $genre = $search->genre;
+            $title = $search->title;
+            $firstBroadcast = $search->firstBroadcast;
+            $director = $search->director;
+            $actor = $search->actor;
         } else {
             return "Unknown type";
         }

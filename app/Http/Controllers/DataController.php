@@ -21,6 +21,16 @@ class DataController extends Controller
         return compact("Genre", "Title", "Year", "Director", "Actor");
     }
 
+    function advancedSearch($search)
+    {
+        // search = request 
+        $sparql = new Sparql();
+
+        $searchResult = $sparql->getMovies('advanced', $search);
+
+        return compact("searchResult");
+    }
+
     function getAllMovies(){
         $sparql = new Sparql();
 
