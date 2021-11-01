@@ -21,7 +21,8 @@ class Sparql extends Model
 
     function getMovies($type = 'all', $search = null)
     {
-        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/short_movies/query');
+        $jena_fuseki_url = env('JENA_FUSEKI_URL');
+        $sparql = new \EasyRdf\Sparql\Client($jena_fuseki_url);
         
         $id = '';
         $genre = '';
