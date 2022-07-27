@@ -21,7 +21,7 @@ class Sparql extends Model
 
     function getMovies($type = 'all', $search = null)
     {
-        $jena_fuseki_url = env('JENA_FUSEKI_URL') ?? 'https://biairmal-fuseki-service.herokuapp.com/short_movies/query';
+        $jena_fuseki_url = env('JENA_FUSEKI_URL');
         $sparql = new \EasyRdf\Sparql\Client($jena_fuseki_url);
         
         $id = '';
